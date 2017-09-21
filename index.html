@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Totally Trivial Trivia</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
+</head>
+<body>
+
+	<div class="background-wrap">
+		<video id="video-bg-el" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+			<source src="assets/images/video.mp4" type="video/mp4">
+			Video not supported
+		</video>
+	</div>
+
+	<div class="container" >
+		<h1>Totally Trivial Trivia!</h1>
+		<button clas='btn btn-primary' id='startBtn'>Start</button>
+		<!--Click Start then go to Questions Page -->
+		<div id=timer></div>
+		<div id=questionNumber></div>
+		<div class='question'></div>
+		<div class='answerChoices'></div>
+		<div class='currentSong'></div>
+		<!-- After you answer a question right or wrong -->
+		<div id=message></div>
+		<div id=giphy></div>
+		<div id=updateAnswer></div>
+		<!-- Final Accounting -->
+		<div id=endMessage></div>
+		<div id=endCorrect></div>
+		<div id=endIncorrect></div>
+		<div id=endUnanswered></div>
+		<div id=startOverBtn></div>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
